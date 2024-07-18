@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <script src="script.js"></script>
+    <style>
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav_bar">
+        <div class="main_header">
+            <div class="logo_container">
+                <a href="index.html"><img src="images/logo.png" alt="Kampung Cameron Logo"></a>
+            </div>
+
+            <div class="search_container">
+                <form>
+                    <input type="text" placeholder="Search.." name="search" size="50">
+                    <button class="search_btn"><img src="images/search.png"></button>
+                </form>
+            </div>
+
+            <div class="language_container">
+                <img src="images/language.png" alt="Language icon" width="25px" height="25px">
+                <p style="font-size:10px;">English</p>
+            </div>
+
+            <div class="icons_container">
+
+                <div class="nav_bar_icon">
+                    <div class="icon">
+                        <svg viewBox="0 0 32 32" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group_2" data-node-id="6:36" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector_5" data-node-id="6:37"
+                                    d="M32,16c0,-8.816 -7.18,-16 -16,-16c-8.82,0 -16,7.184 -16,16c0,4.64 2,8.816 5.17,11.744c0,0.016 0,0.016 -0.02,0.032c0.16,0.16 0.35,0.288 0.51,0.432c0.1,0.08 0.18,0.16 0.28,0.224c0.28,0.24 0.6,0.464 0.91,0.688c0.11,0.08 0.21,0.144 0.32,0.224c0.3,0.208 0.62,0.4 0.96,0.576c0.11,0.064 0.24,0.144 0.35,0.208c0.32,0.176 0.66,0.336 1.01,0.48c0.13,0.064 0.25,0.128 0.38,0.176c0.35,0.144 0.71,0.272 1.06,0.384c0.13,0.048 0.25,0.096 0.38,0.128c0.39,0.112 0.77,0.208 1.15,0.304c0.12,0.032 0.23,0.064 0.36,0.08c0.44,0.096 0.89,0.16 1.36,0.208c0.06,0 0.12,0.016 0.19,0.032c0.54,0.048 1.09,0.08 1.63,0.08c0.54,0 1.09,-0.032 1.62,-0.08c0.06,0 0.12,-0.016 0.19,-0.032c0.46,-0.048 0.91,-0.112 1.36,-0.208c0.11,-0.016 0.22,-0.064 0.35,-0.08c0.38,-0.096 0.78,-0.176 1.15,-0.304c0.13,-0.048 0.26,-0.096 0.39,-0.128c0.35,-0.128 0.72,-0.24 1.05,-0.384c0.13,-0.048 0.26,-0.112 0.39,-0.176c0.33,-0.144 0.67,-0.304 1,-0.48c0.13,-0.064 0.24,-0.144 0.36,-0.208c0.32,-0.192 0.64,-0.368 0.96,-0.576c0.11,-0.064 0.2,-0.144 0.32,-0.224c0.32,-0.224 0.62,-0.448 0.91,-0.688c0.09,-0.08 0.17,-0.16 0.27,-0.224c0.18,-0.144 0.35,-0.288 0.51,-0.432c0,-0.016 0,-0.016 -0.01,-0.032c3.18,-2.928 5.18,-7.104 5.18,-11.744zM23.9,23.952c-4.33,-2.912 -11.44,-2.912 -15.8,0c-0.71,0.464 -1.28,1.008 -1.76,1.6c-2.44,-2.464 -3.94,-5.84 -3.94,-9.552c0,-7.504 6.1,-13.6 13.6,-13.6c7.5,0 13.6,6.096 13.6,13.6c0,3.712 -1.5,7.088 -3.94,9.552c-0.46,-0.592 -1.05,-1.136 -1.76,-1.6z"
+                                    fill="currentColor" />
+                                <path id="Vector_6" data-node-id="6:38"
+                                    d="M16,7.8875c-3.31,0 -6,2.688 -6,6c0,3.248 2.54,5.888 5.92,5.984h0.14h0.12h0.03c3.23,-0.112 5.77,-2.736 5.79,-5.984c0,-3.312 -2.69,-6 -6,-6z"
+                                    fill="currentColor" />
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="icon_text"><a href="cust_profile.html">Profile</a></p>
+                </div>
+
+                <div class="nav_bar_icon">
+                    <div class="icon">
+                        <svg viewBox="0 0 32 32" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id='ð¦ icon "hurt"_2' data-node-id="6:56" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector_7" data-node-id="6:55"
+                                    d="M24,1.3313c-4,0 -6.01,1.725 -8,4c-1.99,-2.275 -4,-4 -8,-4c-4,0 -8,2.6687 -8,10.6687c0,4 4,12.0001 16,18.6688c12,-6.6687 16,-14.6688 16,-18.6688c0,-8 -4,-10.6687 -8,-10.6687z"
+                                    fill="currentColor" />
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="icon_text"><a href="favourites.html">Favourites</a></p>
+                </div>
+
+                <div class="nav_bar_icon">
+                    <div class="icon">
+                        <svg viewBox="0 0 32 32" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id='ð¦ icon "shopping-cart"_2' data-node-id="6:53" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector_8" data-node-id="6:52"
+                                    d="M29.34,18.5177l2.63,-11.5555c0.19,-0.8343 -0.45,-1.6288 -1.3,-1.6288h-21.83l-0.5,-2.4895c-0.13,-0.6205 -0.68,-1.0661 -1.31,-1.0661h-5.7c-0.73,0 -1.33,0.5969 -1.33,1.3333v0.8889c0,0.7364 0.6,1.3334 1.33,1.3334h3.89l3.9,19.0797c-0.94,0.5369 -1.56,1.5437 -1.56,2.698c0,1.7183 1.39,3.1111 3.11,3.1111c1.71,0 3.11,-1.3928 3.11,-3.1111c0,-0.8707 -0.36,-1.6575 -0.94,-2.2222h11.65c-0.58,0.5647 -0.93,1.3515 -0.93,2.2222c0,1.7183 1.39,3.1111 3.11,3.1111c1.71,0 3.11,-1.3928 3.11,-3.1111c0,-1.2317 -0.72,-2.2962 -1.76,-2.8002l0.31,-1.3487c0.19,-0.8343 -0.44,-1.6288 -1.3,-1.6288h-14.91l-0.37,-1.7778h16.29c0.62,0 1.16,-0.4308 1.3,-1.0379z"
+                                    fill="currentColor" />
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="icon_text"><a href="cust_cart.html">Cart</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub_header">
+            <div class="nav_links">
+                <p><a href="cust_home.html">Home</a></p>
+                <p><a href="cust_shop.html">Shop</a></p>
+                <p><a href="cust_bestselling.html">Best-Selling</a></p>
+                <p><a href="cust_sale.html">Sales</a></p>
+                <p><a href="cust_about_us.html">About Us</a></li>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger_nav">
+
+        <div class="hamburger_menu">
+            <div class="hamburger_icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu_links">
+                <li><a href="cust_home.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="cust_shop.html" onclick="toggleMenu()">Shop</a></li>
+                <li><a href="cust_bestselling.html" onclick="toggleMenu()">Best Selling</a></li>
+                <li><a href="cust_sale.html" onclick="toggleMenu()">Sale</a></li>
+                <li><a href="cust_about_us.html" onclick="toggleMenu()">About Us</a></li>
+            </div>
+        </div>
+
+        <div class="logo_container">
+            <a href="index.html"><img src="images/logo.png" alt="Kampung Cameron Logo"></a>
+        </div>
+        <div class="nav_bar_icon" style="padding: 30px 0px;">
+            <div class="icon">
+                <svg viewBox="0 0 32 32" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id='ð¦ icon "shopping-cart"_2' data-node-id="6:53" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector_8" data-node-id="6:52"
+                            d="M29.34,18.5177l2.63,-11.5555c0.19,-0.8343 -0.45,-1.6288 -1.3,-1.6288h-21.83l-0.5,-2.4895c-0.13,-0.6205 -0.68,-1.0661 -1.31,-1.0661h-5.7c-0.73,0 -1.33,0.5969 -1.33,1.3333v0.8889c0,0.7364 0.6,1.3334 1.33,1.3334h3.89l3.9,19.0797c-0.94,0.5369 -1.56,1.5437 -1.56,2.698c0,1.7183 1.39,3.1111 3.11,3.1111c1.71,0 3.11,-1.3928 3.11,-3.1111c0,-0.8707 -0.36,-1.6575 -0.94,-2.2222h11.65c-0.58,0.5647 -0.93,1.3515 -0.93,2.2222c0,1.7183 1.39,3.1111 3.11,3.1111c1.71,0 3.11,-1.3928 3.11,-3.1111c0,-1.2317 -0.72,-2.2962 -1.76,-2.8002l0.31,-1.3487c0.19,-0.8343 -0.44,-1.6288 -1.3,-1.6288h-14.91l-0.37,-1.7778h16.29c0.62,0 1.16,-0.4308 1.3,-1.0379z"
+                            fill="currentColor" />
+                    </g>
+                </svg>
+            </div>
+            <p class="icon_text"><a href="cust_cart.html">Cart</a></p>
+        </div>
+    </div>
+
+    <div class="cart_checkout">
+        <div class="progress_container">
+            <div class="progress_bar">
+                <div class="progress"></div>
+                <div class="circle">1</div>
+                <div class="circle active">2</div>
+                <div class="circle">3</div>
+            </div>
+            <div class="progress_label">
+                <p><a href="cust_cart.html">Shopping Cart</a></p>
+                <p><a href="cust_checkout.html">Checkout Details</a></p>
+                <p>Order Details</p>
+            </div>
+        </div>
+
+        <div class="details">
+            <table>
+                <tr>
+                    <th colspan="2">Contact Information</th>
+                </tr>
+                <tr>
+                    <td><label>First Name *</label><br><input type="text" name="fname"></td>
+                    <td><label>Last Name *</label><br><input type="text" name="lname"></td>
+                </tr>
+                <tr>
+                    <td><label>Phone number *</label><br><input type="text" name="hpno"></td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 40px;" colspan="2"><label>Email *</label><br><input type="email"
+                            name="email" size="40"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Shipping Address</th>
+                </tr>
+                <tr>
+                    <td><label>Street address *</label><br><input type="text" name="street"></td>
+                    <td><br><input type="text" name="addrress" placeholder="Apartment, suite, etc (optional)" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Town *</label><br><input type="text" name="town"></td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 40px;"><label>Postcode *</label><br><input type="text" name="postcode">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">Delivery address</th>
+                </tr>
+                <tr>
+                    <td>Select date *<br><input type="date" name="delivery_date"></td>
+                    <td>Select time *<br>
+                        <div class="dropdown">
+                            <select>
+                                <option value="time">8:00AM</option>
+                                <option value="time">9:00AM</option>
+                                <option value="time">10:00AM</option>
+                                <option value="time">11:00AM</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="checkbox" name="checbox">Ship to a different address?</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Order Notes (Optional) <br><textarea rows="5" cols="70"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size: 5px;">By placing your order, you argree to our Terms of Service,
+                        <a href="privacy_policy.html">Privacy Policy</a>, Return Policy</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="order_summary">
+            <table>
+                <tr>
+                    <th colspan="2">Your Orders</th>
+                </tr>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>RM26.40</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>RM4.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>RM30.40</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center"><button class="checkout_btn">Place Order</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer_links">
+        <div class="foot_best_selling">
+            <h2>Best Selling</h2>
+            <p>Lady Finger/Okra (200g)</p>
+            <p>King Oyster Mushroom (1pkt)</p>
+            <p>Water Spinach (250g)</p>
+            <p>Lemon (1pc)</p>
+            <p>Ginger (250g)</p>
+            <p>Garlic (480g)</p>
+        </div>
+
+        <div class="foot_recipe">
+            <h2>Veggies Recipe</h2>
+            <p>Fresh and Flavourful Veggie Fusion Salad</p>
+            <p>Fresh Vietnamese Spring Rolls</p>
+            <p>Italian Herb-Roasted Vegetables</p>
+        </div>
+
+        <div class="foot_info">
+            <h2>Information</h2>
+            <a href="cust_about_us.html">
+                <p>About Us</p>
+            </a>
+            <a>
+                <p>Contact Us</p>
+            </a>
+            <a href="terms_of_service.html">
+                <p>Terms of Service</p>
+            </a>
+            <a href="privacy_policy.html">
+                <p>Privacy Policy</p>
+            </a>
+            <a>
+                <p>Shipping & Delivery</p>
+            </a>
+            <a href="return_policy.html">
+                <p>Return Policy</p>
+            </a>
+        </div>
+
+        <div class="foot_contact">
+            <h2>Contact Us</h2>
+            <p>014-2277397</p>
+            <p>customer@kampungcameron.com</p>
+        </div>
+    </div>
+
+    <hr>
+    <div class="foot_copyright">
+        <p>Copyright 2024 &copy; Kampung Cameron</p>
+        <p>All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+</html>

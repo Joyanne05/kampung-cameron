@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <script src="script.js"></script>
+    <style>
+        /* LAYOUT - Landing page */
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 104px 60px auto;
+        }
+
+        .logo_container {
+            grid-column: 1/3;
+            background-color: #ebf2fa;
+        }
+
+        .welcome {
+            grid-column: 1/3;
+            text-align: center;
+            padding-top: 15px;
+            background-color: #0c4525;
+            color: white; 
+        }
+
+        .landing_btn_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px; 
+        }
+
+        button {
+            padding: 20px;
+            background-color: #0c4525;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="logo_container" style="text-align: center;">
+            <a href="index.html"><img src="images/logo.png" alt="Kampung Cameron Logo"></a>
+        </div>
+
+        <div class="welcome">
+            <p style="font-size:20px;">WELCOME TO KAMPUNG CAMERON'S ONLINE STORE</p>
+        </div>
+
+        <div class="landing_btn_container" style="background-color: beige;">
+            <a href="cust_home.html"><button>I'm a customer</button></a>
+        </div>
+
+        <div class="landing_btn_container">
+            <a href="corp_home.html"><button>I'm a corporate customer</button></a>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer_links">
+        <div class="foot_best_selling">
+            <h2>Best Selling</h2>
+            <p>Lady Finger/Okra (200g)</p>
+            <p>King Oyster Mushroom (1pkt)</p>
+            <p>Water Spinach (250g)</p>
+            <p>Lemon (1pc)</p>
+            <p>Ginger (250g)</p>
+            <p>Garlic (480g)</p>
+        </div>
+
+        <div class="foot_recipe">
+            <h2>Veggies Recipe</h2>
+            <p>Fresh and Flavourful Veggie Fusion Salad</p>
+            <p>Fresh Vietnamese Spring Rolls</p>
+            <p>Italian Herb-Roasted Vegetables</p>
+        </div>
+
+        <div class="foot_info">
+            <h2>Information</h2>
+            <a href="cust_about_us.html">
+                <p>About Us</p>
+            </a>
+            <a>
+                <p>Contact Us</p>
+            </a>
+            <a href="terms_of_service.html">
+                <p>Terms of Service</p>
+            </a>
+            <a href="privacy_policy.html">
+                <p>Privacy Policy</p>
+            </a>
+            <a>
+                <p>Shipping & Delivery</p>
+            </a>
+            <a href="return_policy.html">
+                <p>Return Policy</p>
+            </a>
+        </div>
+
+        <div class="foot_contact">
+            <h2>Contact Us</h2>
+            <p>014-2277397</p>
+            <p>customer@kampungcameron.com</p>
+        </div>
+    </div>
+
+    <hr>
+    <div class="foot_copyright">
+        <p>Copyright 2024 &copy; Kampung Cameron</p>
+        <p>All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+</html>
